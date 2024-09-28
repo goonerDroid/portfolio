@@ -15,26 +15,38 @@
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
 	<style>
+		#banner .inner {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			text-align: left;
+		}
+
 		#banner .logo {
-			width: 200px;
-			height: 200px;
+			width: 140px;
+			height: 140px;
 			border-radius: 50%;
 			border: 3px solid #ffffff;
 			box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-			margin: 0 auto 20px auto;
-			background-image: url('images/my_img.jpg');
+			margin-right: 2em;
+			flex-shrink: 0;
+			background-image: url('images/your-photo.jpg');
 			background-size: cover;
-			background-position: left center;
+			background-position: center;
 			background-repeat: no-repeat;
 		}
 
-		#banner h1 {
-			font-size: 2.5em;
-			margin-bottom: 0.5em;
+		#banner .content {
+			flex-grow: 1;
 		}
 
 		#banner h2 {
 			font-size: 1.75em;
+			margin-bottom: 0.5em;
+		}
+
+		#banner p {
+			margin-bottom: 0;
 		}
 	</style>
 </head>
@@ -71,10 +83,11 @@
 		<section id="banner">
 			<div class="inner">
 				<div class="logo"></div>
-				<h1>William</h1>
-				<h2>Android Engineer and AI/ML Enthusiast</h2>
-				<p>Crafting beautiful, functional apps since the Gingerbread days.<br />
-					Now exploring Jetpack Compose and diving into the world of GenAI with Python.</p>
+				<div class="content">
+					<h2>Android Engineer and AI/ML Enthusiast</h2>
+					<p>Crafting beautiful, functional apps since the Gingerbread days.<br />
+						Now exploring Jetpack Compose and diving into the world of GenAI with Python.</p>
+				</div>
 			</div>
 		</section>
 
